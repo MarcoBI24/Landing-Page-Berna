@@ -9,3 +9,128 @@
     --color-titulo:#ffca08;
     --color-fondo: linear-gradient(to bottom,#4D8487,#48797D );
 }
+/* CONTENEDOR GENERAL */
+.contenedor-general{
+    width: 100%;
+    background-color: antiquewhite;
+}
+/* CONTENEDOR DEL HEADER COMPLETO */
+.contenedor-header{
+    width: 100%;
+    height: 100px;
+
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contenedor_header-logo{
+    transform: translate(
+        30px
+    );
+    height: 100%;
+}
+.logo{
+    height: 100%;
+}
+.contenedor_header-nav{
+    transform: translate(-50px) scale(2);
+}
+.contenedor_nav-icon{
+
+    color: #ffca08;
+}
+.contenedor_nav-ul{
+    display: none;
+}
+/* imagenes pequeñas por el momento */
+.exclusiva-img{
+    width: 100px;
+}
+/* fin imagenes pequeñas por el momento */
+
+
+
+/* CONTENEDOR MAIN - 1 */
+.contenedor-main-1{
+    background: var(--color-fondo);
+    display: flex;
+    flex-wrap: wrap;
+}
+/* contenedor del modelo que esta dentro de contenedor main */
+.contenedor_main-modelo{
+    width: 100%;
+    flex: 0 2 800px;
+}
+.modelo-img{
+    object-fit: cover;
+    width: 100%;
+}
+/* contenedor section que esta dentro del contenedor main */
+.contenedor_main-section{
+    width:100%;
+    flex: 1 2 200px;
+    height: 600px;
+}
+.contenedor_section-titulo{
+    border: 1px solid red;
+}
+.titulo{
+    font-size: 48px;
+    font-family: "Roboto";
+    color: var(--color-titulo);
+    line-height: 60px;
+    font-weight: 300;
+    letter-spacing: 13px;
+}
+.descuento{
+    color: #fff;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+b{
+    color: #ffca08;
+}
+.contenedor_section-inputs{
+    height: min-content;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.input-nombre{
+
+    height: 50px;
+    width: 300px;
+    opacity: .3;
+}
+.conteiner-input{
+    border: 2px solid;
+    display: flex;
+}
+.border{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    background-color: aliceblue;
+}
+.border::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    right: -3px;
+    top: 1px;
+    width: 18px;
+    border: 2px solid #ffca08;
+}
+.input-correo{
+    height: 50px;
+    width: 300px;
+}
