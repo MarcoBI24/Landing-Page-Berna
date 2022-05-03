@@ -58,6 +58,7 @@
     background: var(--color-fondo);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 /* contenedor del modelo que esta dentro de contenedor main */
 .contenedor_main-modelo{
@@ -73,64 +74,141 @@
     width:100%;
     flex: 1 2 200px;
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 50px;
 }
 .contenedor_section-titulo{
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.running-icon{
+    position: relative;
+    animation-name: running;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes running {
+    0%{
+        left: 0px;
+        text-shadow: -3px 0px 2px white;
+    }
+    50%{
+        transform: translateX(80%);
+        
+    }
+    100%{
+        text-shadow: -5px 0px 2px rgb(5, 60, 180);
+        transform: translate(-14px)  rotateX(0deg) rotateY(180deg);
+    }
 }
 .titulo{
     font-size: 48px;
     font-family: "Roboto";
     color: var(--color-titulo);
     line-height: 60px;
-    font-weight: 300;
-    letter-spacing: 13px;
+    font-weight: 500;
+    letter-spacing: 11px;
 }
 .descuento{
     color: #fff;
     line-height: 20px;
     font-weight: 300;
     letter-spacing: 2px;
-
+    font-size: 20px;
 }
 b{
     color: #ffca08;
 }
 .contenedor_section-inputs{
     height: min-content;
-    border: 2px solid white;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor-input-nombre{
+    display: flex;
+    position: relative;
+    flex: 1 1 100% ;
+    display:flex;
+    justify-content: center;
+}
+.contenedor-input-correo{
+    flex: 1 1 100%;
+    display:flex;
+    justify-content: center;
 }
 .input-nombre{
 
     height: 50px;
-    width: 300px;
-    opacity: .3;
-}
-.conteiner-input{
-    border: 2px solid;
-    display: flex;
-}
-.border{
-    width: 100px;
-    height: 100px;
-    display: flex;
+    width: 100%;
+    max-width: 70%;
+    background-color: black;
+    color: #48797D;
     position: relative;
-    background-color: aliceblue;
+
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    outline:none;
+    padding:10px;
+    border-style: solid ;
+    border: none;
+    box-shadow: 0px 0px 0px 5px #48797D, 6px 5px 0px 1px #ffca08;
+    transition: box-shadow 0.5s ease-in-out;
 }
-.border::after{
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    right: -3px;
-    top: 1px;
-    width: 18px;
-    border: 2px solid #ffca08;
-}
+
 .input-correo{
     height: 50px;
-    width: 300px;
+    
+    width: 100%;
+    max-width: 70%;
+    background-color: black;
+    color: #ffca08;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    outline:none;
+    padding:10px;
+    border-style: solid ;
+    border: none;
+    box-shadow: 0px 0px 0px 5px #48797D, 6px 5px 0px 1px #ffca08;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.contenedor_section-btn{
+
+}
+
+
+.btn-comprar{
+    background-color: black;
+    color: #ffca08;
+    padding: 20px 40px;
+    font-size: 30px;
+    border: 0px solid;
+    font-family: "Roboto";
+    font-weight: 800;
+    transform: none;
+    font-style: italic;
+    box-shadow: 0px 0px 0px 5px #48797D, 7px 5px 0px 2px #ffca08;
+    transition: box-shadow 0.5s ease-in-out, transform 0.5s;
+}
+.btn-comprar:hover{
+    transform: scale(0.9);
+    box-shadow: 2px 2px 0px 2px #ffca08, 3px 2px 0px 2px #ffca08;
+}
+.input-correo:hover, .input-nombre:hover{
+    box-shadow: 2px 2px 0px 2px #ffca08, 4px 4px 0px 2px #ffca08;
+
 }
