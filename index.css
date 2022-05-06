@@ -149,12 +149,27 @@ b{
     position: relative;
     flex: 1 1 100% ;
     display:flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 .contenedor-input-correo{
     flex: 1 1 100%;
     display:flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    gap: 20px;
+}
+.terminos{
+    display: flex;
+    gap: 10px;
+}
+.box-check:checked{
+    background-color: #ffca08;
+    outline: 3px solid;
+    outline: greenyellow;
 }
 .input-nombre{
 
@@ -358,6 +373,7 @@ b{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 
@@ -367,6 +383,7 @@ b{
     font-size: 35px;
     width: 100%;
     flex: 1 1;
+    line-height: 80px;
 }
 /* hijo directo -> contendor de exclusivas */
 .contenedor_main-exclusivas{
@@ -383,7 +400,7 @@ b{
     display: flex;
     position: relative;
     flex-direction: row;
-    width: 400%;
+    width: 500%;
     margin-left: -100%;
 }
 .contenedor-slider_section-modelo{
@@ -404,6 +421,13 @@ b{
 .exclusiva-img{
     width: 100%;
     margin: auto;
+    object-fit: cover;
+    transition: transform 3s;
+    transition-delay: 1.5s ;
+}
+.exclusiva-img:hover{
+
+    transform: scaleX(1.2) scaleY(1.4);
 }
  /*hijo 2 contenedor de los modelos */
 .contenedor_modelo-descripcion{
@@ -455,12 +479,95 @@ b{
     font-size: 50px;
 
 }
+/* contenedor footer */
+.contenedor-footer{
+    background-color: #3c3c3c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.contenedor_footer-año{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.country{
+    flex-basis: 40%;
 
+    font-size: 18px;
+    font-weight: 700;
 
+}
+.bandera{
+    flex-basis: 40%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
 
+    
+}
+.fondo-rojo{
 
+    width: 80%;
+    height: 50%;
+    background-color: #c22d00;
+}
+.raya-blanca{
+    margin: auto;
+    width: 35%;
+    height: 100%;
+    background-color: #fff;
+}
+.contenedor_footer-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;    
+}
+.contenedor-lista-info{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lista-info{
+    list-style: none;
 
+}
+.info{
+    font-size: 17px;
+    font-style: oblique;
+    text-align: center;
+}
+.info:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+.footer-subtitulo{
 
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.contenedor_footer-asistencia{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
 
-
+.contenedor_footer-informacionEmpresa{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
 

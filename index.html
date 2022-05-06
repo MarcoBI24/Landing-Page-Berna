@@ -45,11 +45,16 @@
                         </div>
                         <div class="contenedor_section-inputs">
 
-                            <div class="contenedor-input-nombre">    
-                                <input type="text" class="input-nombre" placeholder="Nombre ">
+                            <div class="contenedor-input-nombre"> 
+                                <input type="text" class="input-nombre" id="name" placeholder="Nombre ">
                             </div> 
                             <div class="contenedor-input-correo">
+
                                 <input type="email" class="input-correo" placeholder="Correo ">
+                                <div class="terminos">
+                                    <input type="checkbox" class="box-check" id="">
+                                    <p>Acepto <a href="http://#" class="terminos-link" target="_blank" rel="noopener noreferrer">términos y condiciones</a></p>
+                                </div>
                             </div>
                             
                         </div>
@@ -174,7 +179,7 @@
                             </div>
                             
                         </div>
-
+                        
                     </div>
                     <div class="slider-btn left" onclick="back()" ><i class="fa-solid fa-circle-right icon-left" id="btn-left" ></i></div>
                     <div class="slider-btn right" onclick="next()"><a class="fa-solid fa-circle-right icon-right" id="btn-right"></a></div>
@@ -193,8 +198,8 @@
                             </div>
                             <div class="contenedor_modelo-descripcion">
                                 <div class="descripcion">
-                                    <p class="descripcion-title">Comodidad</p>
-                                    <p class="descripcion-descripcion">Zapatillas de running para uso diario</p>
+                                    <p class="descripcion-title">COMODIDAD</p>
+                                    <p class="descripcion-descripcion">Zapatillas de running para principiantes</p>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +209,7 @@
                             </div>
                             <div class="contenedor_modelo-descripcion">
                                 <div class="descripcion">
-                                    <p class="descripcion-title">Comodidad</p>
+                                    <p class="descripcion-title">AMORTIGUACIÓN</p>
                                     <p class="descripcion-descripcion">Zapatillas de running para uso diario</p>
                                 </div>
                             </div>
@@ -215,8 +220,8 @@
                             </div>
                             <div class="contenedor_modelo-descripcion">
                                 <div class="descripcion">
-                                    <p class="descripcion-title">Comodidad</p>
-                                    <p class="descripcion-descripcion">Zapatillas de running para uso diario</p>
+                                    <p class="descripcion-title">LIGEREZA</p>
+                                    <p class="descripcion-descripcion">Zapatillas de running de competición</p>
                                 </div>
                             </div>
                         </div>
@@ -226,8 +231,18 @@
                             </div>
                             <div class="contenedor_modelo-descripcion">
                                 <div class="descripcion">
-                                    <p class="descripcion-title">Comodidad</p>
-                                    <p class="descripcion-descripcion">Zapatillas de running para uso diario</p>
+                                    <p class="descripcion-title">SUJECIÓN</p>
+                                    <p class="descripcion-descripcion">Zapatillas de running para entrenar a distancias largas</p>
+                                </div>
+                            </div>
+                        </div><div class="contenedor-slider_section-modelo" id="section-run">
+                            <div class="contenedor_modelo-img">
+                                <img src="images/imagen-5.jpg" class="exclusiva-img">
+                            </div>
+                            <div class="contenedor_modelo-descripcion">
+                                <div class="descripcion">
+                                    <p class="descripcion-title">PROTECCIÓN</p>
+                                    <p class="descripcion-descripcion">Zapatillas de trail running</p>
                                 </div>
                             </div>
                         </div>
@@ -238,39 +253,51 @@
             </main>
             <!-- contenedor-footer -->
             <footer class="contenedor-footer">
+                <div class="contenedor_footer-año">
+                    <div class="country">Perú</div>
+                    <div class="bandera">
+                        <div class="fondo-rojo">
+                            <div class="raya-blanca"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="año">2022</div>
+                </div>
                 <div class="contenedor_footer-productos">
                     <p class="footer-subtitulo">Productos</p>
-                    <div class="contendor-lista-productos">
-                        <ul class="lista-pruductos">
-                            <li class="producto-nombre">Zapatillas</li>
-                            <li class="producto-nombre">Accesorios</li>
-                            <li class="producto-nombre">Ropa</li>
-                            <li class="producto-nombre">Chimpunes</li>
-                            <li class="producto-nombre">Buzos</li>
-                            <li class="producto-nombre">Calazado</li>
+                    <div class="contenedor-lista-info">
+                        <ul class="lista-info">
+                            <li class="info">Zapatillas</li>
+                            <li class="info">Accesorios</li>
+                            <li class="info">Ropa</li>
+                            <li class="info">Chimpunes</li>
+                            <li class="info">Buzos</li>
+                            <li class="info">Calazado</li>
                         </ul>
                     </div>
                 </div>
                 <div class="contenedor_footer-asistencia">
                     <p class="footer-subtitulo">Asistencia</p>
-                    <div class="contenedor-lista-asistencia">
-                        <ul class="lista-asistencia">
-                            <li class="aistencia-nombre">¿Necesita ayuda?</li>
-                            <li class="aistencia-nombre">Servicio de ayuda</li>
-                            <li class="aistencia-nombre">Dudas frecuentes</li>
-                            <li class="aistencia-nombre">Realizar pedidos</li>
-                            <li class="aistencia-nombre">Pagos</li>
-                            <li class="aistencia-nombre">Solicitar devolución</li>
+                    <div class="contenedor-lista-info">
+                        <ul class="lista-info">
+                            <li class="info">¿Necesita ayuda?</li>
+                            <li class="info">Servicio de ayuda</li>
+                            <li class="info">Dudas frecuentes</li>
+                            <li class="info">Realizar pedidos</li>
+                            <li class="info">Pagos</li>
+                            <li class="info">Solicitar devolución</li>
                         </ul>
                     </div>
                 </div>
-                <div class="contenedor_footer-año">
-                    <div class="bandera">
-                        <div class="fondo-rojo">
-                            <div class="raya-blanca"></div>
-                        </div>
+                <div class="contenedor_footer-informacionEmpresa">
+                    <p class="footer-subtitulo">Acerca de la empresa</p>
+                    <div class="contenedor-lista-info">
+                        <ul class="lista-info">
+                            <li class="info">Acerca de Berna</li>
+                            <li class="info">Trabaja en nuestro equipo</li>
+                            <li class="info">Prensa</li>
+                        </ul>
                     </div>
-                    <div class="año">2022</div>
                 </div>
             </footer>
         </div>
