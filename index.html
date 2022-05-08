@@ -19,18 +19,58 @@
                 <!-- contenedor nav -->
                 <nav class="contenedor_header-nav">
                     <!-- contenedor de menu -->
-                    <div class="contenedor_nav-icon">
-                        <i class="fa-solid fa-bars"></i>
+                    <div class="contenedor_nav-icon " id="btnMenu">
+                        <i class="fa-solid fa-bars icon-barras"></i>
                     </div>
                     <!-- contenedor del menu en escritorio -->
-                    <ul class="contenedor_nav-ul">
-                        <li>Inicio</li>
-                        <li>Help</li>
-                        <li>Contacto</li>
-                        <li>Catalogo</li>
-                    </ul>
+                   <div class="contenedor_nav-menu">
+                       <ul class="menu-ul">
+                           <li class="menu-item">Inicio</li>
+                           <li class="menu-item">Ayuda</li>
+                           <li class="menu-item">
+                                <a class="contacto-desktop" id="contacto-link">Contácto <p class="fa-solid fa-chevron-left icon-flecha " id="contactoDesktop"></p></a>                                
+                                <ul class="submenu-desktop" id="subMenuDesktop">
+                                    <li class="submenu-item-d">Número</li>
+                                    <li class="submenu-item-d">Correo</li>
+                                    <li class="submenu-item-d">Whatsapp</li>
+                                </ul>
+                           </li>
+                           <li class="menu-item">
+                                <a class="catalogo-desktop" id="">Catálogo <p class="fa-solid fa-chevron-left icon-flecha" id="catalogoDesktop"></p></a>                                
+                                <ul class="submenu-desktop" id="subMenuCatalogoDesktop">
+                                    <li class="submenu-item-d">Zapatillas</li>
+                                    <li class="submenu-item-d">Casacas</li>
+                                    <li class="submenu-item-d">Accesorios</li>
+                                </ul>
+                           </li>
+                       </ul>
+                   </div>
                 </nav>
+                
+                
             </header>
+            <div class="contenedor-menu" id="menuContenedor">
+                        <ul class="contenedor-ul">
+                            <li class="ul-item">Inicio</li>
+                            <li class="ul-item">Ayuda</li>
+                            <li class="ul-item">
+                                <a class="contacto">Contácto <p class="fa-solid fa-chevron-left icon-submenu " id="contacto"></p></a>                                
+                                <ul class="submenu" id="subMenu">
+                                    <li class="submenu-item">Número</li>
+                                    <li class="submenu-item">Correo</li>
+                                    <li class="submenu-item">Whatsapp</li>
+                                </ul>
+                            </li>
+                            <li class="ul-item">
+                                <a class="catalogo">Catálogo <p class="fa-solid fa-chevron-left icon-submenu" id="catalogo"></p></a>                                
+                                <ul class="submenuCatalogo" id="subMenuCatalogo">
+                                    <li class="submenu-item">Zapatillas</li>
+                                    <li class="submenu-item">Casacas</li>
+                                    <li class="submenu-item">Accesorios</li>
+                                </ul>
+                            </li>
+                        </ul>
+            </div> 
             <!-- contendor-main-1 -->
             <main class="contenedor-main-1">
                     <div class="contenedor_main-modelo">
@@ -52,7 +92,7 @@
 
                                 <input type="email" class="input-correo" placeholder="Correo ">
                                 <div class="terminos">
-                                    <input type="checkbox" class="box-check" id="">
+                                    <input type="checkbox" class="" id="box-check">
                                     <p>Acepto <a href="http://#" class="terminos-link" target="_blank" rel="noopener noreferrer">términos y condiciones</a></p>
                                 </div>
                             </div>
@@ -66,10 +106,16 @@
             <!-- contenedor-main-2 -->
             <main class="contenedor-main-2">
                 <div class="contenedor_main-subtitulo">
-                    <h2 class="subtitulo">LO MEJOR DE BERNA</h2>
-
+                    <h2 class="subtitulo">LO MEJOR DE BERNA </h2>
+                    <div class="promocion">
+                        <p class="promocion-item"><b style="
+                            
+                            color:black;
+                            font-style:italic;"> 20%</b> de descuento por el dia de la <b style="color: black;
+                            font-style: italic;"> Madre</b></p>
+                    </div>
                 </div>
-                <div class="contenedor_main-zapatillas">
+                <div class="contenedor_main-zapatillas" id="contenedor-slider">
                     <div class="contenedor_zapatillas-slider" id="slider">
                         <div class="contenedor-zapatilla">
                             <div class="contenedor_zapatilla-img">
@@ -190,7 +236,7 @@
                     <h2><i>ENCUENTRA TUS ZAPATILLAS PARA CORRER</i></h2>
                     
                 </div>
-                <div class="contenedor_main-exclusivas">
+                <div class="contenedor_main-exclusivas" id="contenedor-slider-run">
                     <div class="contenedor-slider" id="slider-run">
                         <div class="contenedor-slider_section-modelo" id="section-run">
                             <div class="contenedor_modelo-img">
@@ -301,6 +347,7 @@
                 </div>
             </footer>
         </div>
+        <script src="menu.js"></script>
         <script src="slider1.js"></script>
         <script src="slider2.js"></script>
     </body>
